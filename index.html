@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Servicio Técnico JJ - Soluciones Tecnológicas (B&N)</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body class="text-gray-800">
+
+    <nav class="bg-jj-light-bg shadow-md p-4 sticky top-0 z-50">
+        <div class="container mx-auto flex justify-between items-center">
+            <div class="flex items-center">
+                <img src="./images/logo.jpg" alt="Logo Service JJ" class="h-20 w-auto rounded-md">
+                <h1 class="text-4xl font-newtown text-jj-blue">  Service JJ</h1>
+            </div>
+
+            <button id="mobile-menu-button" class="md:hidden text-jj-blue focus:outline-none">
+                <i class="fas fa-bars text-2xl"></i>
+            </button>
+
+            <ul id="main-nav-menu" class="mobile-menu-base mobile-menu-hidden md:flex md:space-x-6">
+                <li class="md:hidden flex justify-end p-4">
+                    <button id="close-mobile-menu" class="text-jj-blue focus:outline-none">
+                        <i class="fas fa-times text-2xl"></i>
+                    </button>
+                </li>
+                <li><a href="#inicio" class="block py-3 px-4 text-gray-700 hover:text-jj-orange md:hover:bg-transparent md:inline-block md:py-0 md:px-0 rounded-md transition duration-300 ease-in-out">Inicio</a></li>
+                <li><a href="#servicios" class="block py-3 px-4 text-gray-700 hover:text-jj-orange md:hover:bg-transparent md:inline-block md:py-0 md:px-0 rounded-md transition duration-300 ease-in-out">Servicios</a></li>
+                <li><a href="#porque-elegirnos" class="block py-3 px-4 text-gray-700 hover:text-jj-orange md:hover:bg-transparent md:inline-block md:py-0 md:px-0 rounded-md transition duration-300 ease-in-out">¿Por Qué Elegirnos?</a></li>
+                <li><a href="#nosotros" class="block py-3 px-4 text-gray-700 hover:text-jj-orange md:hover:bg-transparent md:inline-block md:py-0 md:px-0 rounded-md transition duration-300 ease-in-out">Nosotros</a></li>
+                <li><a href="#contacto" class="block py-3 px-4 text-gray-700 hover:text-jj-orange md:hover:bg-transparent md:inline-block md:py-0 md:px-0 rounded-md transition duration-300 ease-in-out">Contacto</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section id="inicio" class="bg-jj-blue text-white py-20 md:py-32 text-center rounded-b-lg shadow-lg">
+        <div class="container mx-auto px-4">
+            <h1 class="text-4xl md:text-6xl font-newtown leading-tight mb-6 animate-fade-in-down">
+                Tu Solución Tecnológica y del Hogar en un solo lugar
+            </h1>
+            <p class="text-lg md:text-2xl mb-10 max-w-3xl mx-auto opacity-90 animate-fade-in-up">
+                En Servicio Técnico JJ, reparamos y mantenemos tus dispositivos electrónicos y electrodomésticos para que funcionen como nuevos.
+            </p>
+            <a href="#contacto" class="bg-jj-orange text-white font-bold py-3 px-8 rounded-full text-xl hover:bg-jj-orange-dark transition duration-300 ease-in-out transform hover:scale-105 shadow-lg">
+                ¡Contáctanos Ahora!
+            </a>
+        </div>
+    </section>
+
+    <section id="servicios" class="py-16 md:py-24 bg-jj-light-bg">
+        <div class="container mx-auto px-4">
+            <h2 class="text-4xl md:text-5xl font-newtown text-center mb-12 text-jj-blue hidden-on-load">Nuestros Servicios</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+                <div class="bg-jj-light-bg-darker p-8 rounded-xl shadow-lg hover:shadow-xl transition duration-300 ease-in-out transform hover:-translate-y-2 border border-jj-light-bg-darker hidden-on-load">
+                    <div class="text-jj-orange text-5xl mb-6 text-center">💻</div>
+                    <h3 class="text-2xl font-semibold text-jj-blue mb-4 text-center">Reparación de Laptops</h3>
+                    <p class="text-gray-700 text-center">
+                        Diagnóstico y reparación de hardware y software, limpieza, optimización y recuperación de datos.
+                    </p>
+                </div>
+
+                <div class="bg-jj-light-bg-darker p-8 rounded-xl shadow-lg hover:shadow-xl transition duration-300 ease-in-out transform hover:-translate-y-2 border border-jj-light-bg-darker hidden-on-load">
+                    <div class="text-jj-orange text-5xl mb-6 text-center">📱</div>
+                    <h3 class="text-2xl font-semibold text-jj-blue mb-4 text-center">Reparación de Celulares</h3>
+                    <p class="text-gray-700 text-center">
+                        Cambio de pantallas, baterías, conectores de carga, problemas de software y mucho más.
+                    </p>
+                </div>
+
+                <div class="bg-jj-light-bg-darker p-8 rounded-xl shadow-lg hover:shadow-xl transition duration-300 ease-in-out transform hover:-translate-y-2 border border-jj-light-bg-darker hidden-on-load">
+                    <div class="text-jj-orange text-5xl mb-6 text-center">📺</div>
+                    <h3 class="text-2xl font-semibold text-jj-blue mb-4 text-center">Reparación de Televisores</h3>
+                    <p class="text-gray-700 text-center">
+                        Solución de problemas de imagen, sonido, encendido y conectividad en todo tipo de televisores.
+                    </p>
+                </div>
+
+                <div class="bg-jj-light-bg-darker p-8 rounded-xl shadow-lg hover:shadow-xl transition duration-300 ease-in-out transform hover:-translate-y-2 border border-jj-light-bg-darker hidden-on-load">
+                    <div class="text-jj-orange text-5xl mb-6 text-center">❄️</div>
+                    <h3 class="text-2xl font-semibold text-jj-blue mb-4 text-center">Refrigeración</h3>
+                    <p class="text-gray-700 text-center">
+                        Reparación y mantenimiento de heladeras, freezers, aires acondicionados y sistemas de refrigeración.
+                    </p>
+                </div>
+
+                <div class="bg-jj-light-bg-darker p-8 rounded-xl shadow-lg hover:shadow-xl transition duration-300 ease-in-out transform hover:-translate-y-2 border border-jj-light-bg-darker hidden-on-load">
+                    <div class="text-jj-orange text-5xl mb-6 text-center">🔥</div>
+                    <h3 class="text-2xl font-semibold text-jj-blue mb-4 text-center">Calefacción</h3>
+                    <p class="text-gray-700 text-center">
+                        Servicio técnico para estufas, calefactores, calderas y sistemas de calefacción.
+                    </p>
+                </div>
+
+                <div class="bg-jj-light-bg-darker p-8 rounded-xl shadow-lg hover:shadow-xl transition duration-300 ease-in-out transform hover:-translate-y-2 border border-jj-light-bg-darker hidden-on-load">
+                    <div class="text-jj-orange text-5xl mb-6 text-center">🧺</div>
+                    <h3 class="text-2xl font-semibold text-jj-blue mb-4 text-center">Electrodomésticos</h3>
+                    <p class="text-gray-700 text-center">
+                        Reparación de lavarropas, microondas, hornos eléctricos, aspiradoras y otros electrodomésticos.
+                    </p>
+                </div>
+
+                <div class="bg-jj-light-bg-darker p-8 rounded-xl shadow-lg hover:shadow-xl transition duration-300 ease-in-out transform hover:-translate-y-2 border border-jj-light-bg-darker hidden-on-load">
+                    <div class="text-jj-orange text-5xl mb-6 text-center">🖥️</div>
+                    <h3 class="text-2xl font-semibold text-jj-blue mb-4 text-center">Mantenimiento de Computadoras</h3>
+                    <p class="text-gray-700 text-center">
+                        Limpieza interna, optimización del sistema, instalación de antivirus y actualizaciones.
+                    </p>
+                </div>
+
+                <div class="bg-jj-light-bg-darker p-8 rounded-xl shadow-lg hover:shadow-xl transition duration-300 ease-in-out transform hover:-translate-y-2 border border-jj-light-bg-darker hidden-on-load">
+                    <div class="text-jj-orange text-5xl mb-6 text-center">💾</div>
+                    <h3 class="text-2xl font-semibold text-jj-blue mb-4 text-center">Recuperación de Datos</h3>
+                    <p class="text-gray-700 text-center">
+                        Recuperamos información valiosa de discos duros dañados, USBs y otros medios de almacenamiento.
+                    </p>
+                </div>
+
+                <div class="bg-jj-light-bg-darker p-8 rounded-xl shadow-lg hover:shadow-xl transition duration-300 ease-in-out transform hover:-translate-y-2 border border-jj-light-bg-darker hidden-on-load">
+                    <div class="text-jj-orange text-5xl mb-6 text-center">💡</div>
+                    <h3 class="text-2xl font-semibold text-jj-blue mb-4 text-center">Asesoramiento Técnico</h3>
+                    <p class="text-gray-700 text-center">
+                        Te ayudamos a elegir el mejor equipo, configurar redes y resolver dudas tecnológicas.
+                    </p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section id="porque-elegirnos" class="py-16 md:py-24 bg-jj-light-bg-darker">
+        <div class="container mx-auto px-4">
+            <h2 class="text-4xl md:text-5xl font-bold text-center mb-12 text-jj-blue hidden-on-load">¿Por Qué Elegirnos?</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="bg-jj-light-bg p-8 rounded-xl shadow-lg hover:shadow-xl transition duration-300 ease-in-out transform hover:-translate-y-2 border border-jj-light-bg-darker hidden-on-load">
+                    <div class="text-jj-orange text-5xl mb-6 text-center">✅</div>
+                    <h3 class="text-2xl font-semibold text-jj-blue mb-4 text-center">Experiencia Comprobada</h3>
+                    <p class="text-gray-700 text-center">
+                        Contamos con años de experiencia en el sector, garantizando reparaciones de alta calidad.
+                    </p>
+                </div>
+                <div class="bg-jj-light-bg p-8 rounded-xl shadow-lg hover:shadow-xl transition duration-300 ease-in-out transform hover:-translate-y-2 border border-jj-light-bg-darker hidden-on-load">
+                    <div class="text-jj-orange text-5xl mb-6 text-center">👨‍🔧</div>
+                    <h3 class="text-2xl font-semibold text-jj-blue mb-4 text-center">Técnicos Certificados</h3>
+                    <p class="text-gray-700 text-center">
+                        Nuestro equipo está formado por profesionales altamente capacitados y con las certificaciones necesarias.
+                    </p>
+                </div>
+                <div class="bg-jj-light-bg p-8 rounded-xl shadow-lg hover:shadow-xl transition duration-300 ease-in-out transform hover:-translate-y-2 border border-jj-light-bg-darker hidden-on-load">
+                    <div class="text-jj-orange text-5xl mb-6 text-center">⚡</div>
+                    <h3 class="text-2xl font-semibold text-jj-blue mb-4 text-center">Rapidez y Eficiencia</h3>
+                    <p class="text-gray-700 text-center">
+                        Entendemos la urgencia, por eso ofrecemos un servicio ágil para que recuperes tus equipos pronto.
+                    </p>
+                </div>
+                <div class="bg-jj-light-bg p-8 rounded-xl shadow-lg hover:shadow-xl transition duration-300 ease-in-out transform hover:-translate-y-2 border border-jj-light-bg-darker hidden-on-load">
+                    <div class="text-jj-orange text-5xl mb-6 text-center">🛡️</div>
+                    <h3 class="text-2xl font-semibold text-jj-blue mb-4 text-center">Garantía en Reparaciones</h3>
+                    <p class="text-gray-700 text-center">
+                        Respaldamos nuestro trabajo con garantía, brindándote tranquilidad y confianza.
+                    </p>
+                </div>
+                <div class="bg-jj-light-bg p-8 rounded-xl shadow-lg hover:shadow-xl transition duration-300 ease-in-out transform hover:-translate-y-2 border border-jj-light-bg-darker hidden-on-load">
+                    <div class="text-jj-orange text-5xl mb-6 text-center">💰</div>
+                    <h3 class="text-2xl font-semibold text-jj-blue mb-4 text-center">Precios Justos</h3>
+                    <p class="text-gray-700 text-center">
+                        Ofrecemos tarifas competitivas y transparentes, sin sorpresas.
+                    </p>
+                </div>
+                <div class="bg-jj-light-bg p-8 rounded-xl shadow-lg hover:shadow-xl transition duration-300 ease-in-out transform hover:-translate-y-2 border border-jj-light-bg-darker hidden-on-load">
+                    <div class="text-jj-orange text-5xl mb-6 text-center">💬</div>
+                    <h3 class="text-2xl font-semibold text-jj-blue mb-4 text-center">Atención Personalizada</h3>
+                    <p class="text-gray-700 text-center">
+                        Escuchamos tus necesidades y te ofrecemos la mejor solución para tu caso.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="nosotros" class="py-16 md:py-24 bg-jj-light-bg-darker">
+        <div class="container mx-auto px-4 flex flex-col md:flex-row items-center justify-center gap-12">
+            <div class="md:w-1/2 text-center md:text-left hidden-on-load">
+                <h2 class="text-4xl md:text-5xl font-bold mb-6 text-jj-blue">Sobre Nosotros</h2>
+                <p class="text-lg md:text-xl text-gray-700 leading-relaxed mb-6">
+                    En <span class="font-semibold text-jj-orange">Servicio Técnico JJ</span>, nos dedicamos a ofrecer soluciones integrales para tus problemas tecnológicos y del hogar. Con años de experiencia en el sector, nuestro equipo de técnicos altamente capacitados está listo para brindarte un servicio rápido, eficiente y de la más alta calidad.
+                </p>
+                <p class="text-lg md:text-xl text-gray-700 leading-relaxed">
+                    Nuestra misión es garantizar la satisfacción de nuestros clientes, asegurando que sus dispositivos y electrodomésticos funcionen de manera óptima y extendiendo su vida útil. ¡Confía en los expertos!
+                </p>
+            </div>
+            <div class="md:w-1/2 flex justify-center hidden-on-load">
+                <img src="https://placehold.co/400x300/333333/F0F0F0?text=Equipo%20JJ" alt="Equipo de Servicio Técnico JJ" class="rounded-xl shadow-xl w-full max-w-md">
+            </div>
+        </div>
+    </section>
+
+    <section id="cta" class="bg-jj-blue text-white py-20 md:py-24 text-center rounded-t-lg shadow-lg">
+        <div class="container mx-auto px-4 hidden-on-load">
+            <h2 class="text-4xl md:text-5xl font-bold leading-tight mb-6">
+                ¿Listo para que tus equipos vuelvan a funcionar?
+            </h2>
+            <p class="text-lg md:text-2xl mb-10 max-w-3xl mx-auto opacity-90">
+                No esperes más. Contáctanos hoy mismo para obtener un diagnóstico y presupuesto sin compromiso.
+            </p>
+            <a href="#contacto" class="bg-jj-orange text-white font-bold py-3 px-8 rounded-full text-xl hover:bg-jj-orange-dark transition duration-300 ease-in-out transform hover:scale-105 shadow-lg">
+                Agenda tu Servicio
+            </a>
+        </div>
+    </section>
+
+    <section id="contacto" class="py-16 md:py-24 bg-jj-light-bg">
+        <div class="container mx-auto px-4">
+            <h2 class="text-4xl md:text-5xl font-bold text-center mb-12 text-jj-blue hidden-on-load">Contáctanos</h2>
+            <div class="flex flex-col md:flex-row justify-center items-center gap-12">
+                <div class="md:w-1/2 bg-jj-light-bg-darker p-8 rounded-xl shadow-lg border border-jj-light-bg-darker w-full max-w-md hidden-on-load">
+                    <h3 class="text-2xl font-semibold text-jj-blue mb-6 text-center">Envíanos un Mensaje</h3>
+                    <form class="space-y-6">
+                        <div>
+                            <label for="nombre" class="block text-gray-700 text-sm font-bold mb-2">Nombre:</label>
+                            <input type="text" id="nombre" name="nombre" class="shadow appearance-none border rounded-lg w-full py-3 px-4 text-gray-700 leading-tight focus:outline-none focus:ring-2 focus:ring-jj-orange focus:border-transparent" placeholder="Tu Nombre Completo">
+                        </div>
+                        <div>
+                            <label for="email" class="block text-gray-700 text-sm font-bold mb-2">Email:</label>
+                            <input type="email" id="email" name="email" class="shadow appearance-none border rounded-lg w-full py-3 px-4 text-gray-700 leading-tight focus:outline-none focus:ring-2 focus:ring-jj-orange focus:border-transparent" placeholder="tu.email@ejemplo.com">
+                        </div>
+                        <div>
+                            <label for="mensaje" class="block text-gray-700 text-sm font-bold mb-2">Mensaje:</label>
+                            <textarea id="mensaje" name="mensaje" rows="6" class="shadow appearance-none border rounded-lg w-full py-3 px-4 text-gray-700 leading-tight focus:outline-none focus:ring-2 focus:ring-jj-orange focus:border-transparent" placeholder="Describe tu consulta o problema..."></textarea>
+                        </div>
+                        <button type="submit" class="bg-jj-orange text-white font-bold py-3 px-6 rounded-full text-lg hover:bg-jj-orange-dark transition duration-300 ease-in-out w-full shadow-md">
+                            Enviar Mensaje
+                        </button>
+                    </form>
+                </div>
+                <div class="md:w-1/2 bg-jj-light-bg-darker p-8 rounded-xl shadow-lg border border-jj-light-bg-darker w-full max-w-md hidden-on-load">
+                    <h3 class="text-2xl font-semibold text-jj-blue mb-6 text-center">Nuestra Información</h3>
+                    <div class="space-y-4 text-gray-700 text-lg">
+                        <p class="flex items-center justify-center md:justify-start">
+                            <span class="text-jj-orange mr-3">📞</span> Teléfono: <a href="tel:+541112345678" class="ml-2 hover:underline">+54 11 1234-5678</a>
+                        </p>
+                        <p class="flex items-center justify-center md:justify-start">
+                            <span class="text-jj-orange mr-3">📧</span> Email: <a href="mailto:info@serviciotecnicojj.com" class="ml-2 hover:underline">info@serviciotecnicojj.com</a>
+                        </p>
+                        <p class="flex items-center justify-center md:justify-start">
+                            <span class="text-jj-orange mr-3">📍</span> Dirección: Calle Ficticia 123, Ciudad, País
+                        </p>
+                        <p class="flex items-center justify-center md:justify-start">
+                            <span class="text-jj-orange mr-3">⏰</span> Horario: Lun-Vie: 9:00 - 18:00
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-jj-blue text-white py-8 text-center rounded-t-lg shadow-inner">
+        <div class="container mx-auto px-4">
+            <p>&copy; 2024 Servicio Técnico JJ. Todos los derechos reservados.</p>
+            <div class="mt-4 flex justify-center space-x-6">
+                <a href="#" class="text-white hover:text-jj-orange transition duration-300 ease-in-out text-2xl">
+                    <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                        <path fill-rule="evenodd" d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33V22H12c5.523 0 10-4.477 10-10z" clip-rule="evenodd" />
+                    </svg>
+                </a>
+                <a href="#" class="text-white hover:text-jj-orange transition duration-300 ease-in-out text-2xl">
+                    <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                        <path fill-rule="evenodd" d="M12 0C8.74 0 8.333.014 7.053.072 5.775.132 4.92.333 4.145.645A5.99 5.99 0 00.646 4.146C.333 4.92.131 5.775.072 7.053.014 8.333 0 8.74 0 12s.014 3.667.072 4.947c.06 1.278.261 2.133.573 2.907a5.99 5.99 0 003.501 3.502c.774.312 1.629.513 2.907.572C8.333 23.986 8.74 24 12 24s3.667-.014 4.947-.072c1.278-.06 2.133-.261 2.907-.573a5.99 5.99 0 003.502-3.501c.312-.774.513-1.629.572-2.907.058-1.278.072-1.685.072-4.947s-.014-3.667-.072-4.947c-.06-1.278-.261-2.133-.573-2.907A5.99 5.99 0 0019.854.646C19.08.333 18.225.131 16.947.072 15.667.014 15.26 0 12 0zm0 2.16c3.203 0 3.585.016 4.85.071 1.17.055 1.805.249 2.227.425.695.286 1.154.639 1.596 1.08a4.322 4.322 0 011.08 1.596c.176.423.37 1.058.425 2.227.056 1.265.07 1.647.07 4.85s-.014 3.585-.07 4.85c-.055 1.17-.249 1.805-.425 2.227a4.322 4.322 0 01-1.08 1.596c-.423.176-1.058.37-2.227.425-1.265.056-1.647.07-4.85.07s-3.585-.014-4.85-.07c-1.17-.055-1.805-.249-2.227-.425a4.322 4.322 0 01-1.596-1.08c-.176-.423-.37-1.058-.425-2.227-.056-1.265-.07-1.647-.07-4.85s.014-3.585.07-4.85c.055-1.17.249-1.805.425-2.227a4.322 4.322 0 011.08-1.596c.423-.176 1.058-.37 2.227-.425C8.415 2.176 8.802 2.16 12 2.16zm0 3.635a6.236 6.236 0 100 12.472 6.236 6.236 0 000-12.472zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.26 1.26 0 10-.002 2.52 1.26 1.26 0 00.002-2.52zm-6.406 5.635a2.526 2.526 0 110 5.052 2.526 2.526 0 010-5.052z" clip-rule="evenodd" />
+                    </svg>
+                </a>
+                </div>
+        </div>
+    </footer>
+
+<!-- Scripts -->
+<script src="js/main.js"></script>
+
+
+</body>
+</html>

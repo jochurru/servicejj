@@ -1,0 +1,125 @@
+/* Base Styles */
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: #F8F8F8; /* Un blanco muy suave */
+            color: #333333; /* Gris oscuro para el texto principal */
+        }
+
+        /* Custom Color Palette - Black & White Theme */
+        .bg-jj-blue { background-color: #222222; } /* Negro casi puro para el azul oscuro */
+        .text-jj-blue { color: #222222; }
+        .bg-jj-orange { background-color: #555555; } /* Gris medio para el naranja */
+        .text-jj-orange { color: #555555; }
+        .border-jj-orange { border-color: #555555; }
+        .hover\:bg-jj-orange-dark:hover { background-color: #333333; } /* Gris oscuro para hover del "naranja" */
+        .hover\:bg-jj-blue-light:hover { background-color: #444444; } /* Gris más claro para hover del "azul" */
+
+        /* Light Backgrounds - Black & White Theme */
+        .bg-jj-light-bg { background-color: #FFFFFF; } /* Blanco puro */
+        .bg-jj-light-bg-darker { background-color: #F0F0F0; } /* Gris muy claro para secciones */
+        .border-jj-light-bg-darker { border-color: #E0E0E0; } /* Borde un poco más oscuro */
+
+        /* Smooth Scroll Behavior */
+        html {
+            scroll-behavior: smooth;
+        }
+
+        /* Keyframes for Animations */
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        @keyframes fadeInDown {
+            from { opacity: 0; transform: translateY(-20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        @keyframes fadeInUp {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        /* Classes to Apply Animations */
+        .animate-fade-in {
+            opacity: 0;
+            animation: fadeIn 0.8s ease-out forwards;
+        }
+        .animate-fade-in-down {
+            opacity: 0;
+            animation: fadeInDown 1s ease-out forwards;
+        }
+        .animate-fade-in-up {
+            opacity: 0;
+            animation: fadeInUp 1s ease-out forwards;
+        }
+
+        /* Classes for Scroll-triggered Animations (managed by JavaScript) */
+        .hidden-on-load {
+            opacity: 0;
+            transform: translateY(20px);
+        }
+        .animated-scroll {
+            animation-fill-mode: forwards;
+        }
+
+        /* Custom styles for mobile menu toggle */
+        /* Base styles for the mobile menu overlay */
+        .mobile-menu-base {
+            position: fixed;
+            top: 0;
+            right: 0;
+            height: 100%;
+            width: 16rem; /* Tailwind's w-64 is 16rem */
+            background-color: #F0F0F0; /* bg-jj-light-bg-darker */
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05); /* shadow-lg */
+            transition: right 0.3s ease-in-out; /* Smooth slide transition */
+            z-index: 100; /* Ensure it's on top of everything */
+            display: flex; /* Flex container for menu items */
+            flex-direction: column; /* Stack items vertically */
+            padding-top: 1rem; /* Add some padding at the top */
+        }
+        /* State when menu is hidden */
+        .mobile-menu-hidden {
+            right: -16rem; /* Hide it off-screen to the right */
+        }
+        /* State when menu is visible */
+        .mobile-menu-visible {
+            right: 0; /* Bring it into view */
+        }
+
+        /* Media query for desktop sizes (md breakpoint and up) */
+        @media (min-width: 768px) {
+            .mobile-menu-base {
+                position: relative; /* Reset to relative positioning */
+                height: auto; /* Reset height */
+                width: auto; /* Reset width */
+                background-color: transparent; /* Transparent background */
+                box-shadow: none; /* No shadow */
+                transition: none; /* No transition on desktop */
+                z-index: auto; /* Reset z-index */
+                right: auto; /* Reset right property */
+                display: flex; /* Ensure it's a flex container */
+                flex-direction: row; /* Arrange items horizontally */
+                justify-content: flex-end; /* Align items to the end */
+                align-items: center; /* Vertically center items */
+                padding-top: 0; /* Remove top padding */
+            }
+            /* Ensure menu is always visible on desktop */
+            .mobile-menu-hidden, .mobile-menu-visible {
+                right: auto; /* Reset right property */
+            }
+        }
+
+@font-face {
+    font-family: 'Newtown';
+    src: url('../fonts/NEWTOW_B.TTF') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+
+    .font-newtown {
+    font-family: 'Newtown', sans-serif;
+    text-transform: uppercase;
+}
