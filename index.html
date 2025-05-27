@@ -8,16 +8,25 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    integrity="sha512-rXnVE2s6Lbqyp4x7dQzv5T1l1VnW7c0JYj8DFFaI8GKM61mu+gCR1UpkyzrGKmR8rZ6P+1R1I+DZ5PKWwiZ/8w=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+    />
+
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body class="text-gray-800">
 
     <nav class="bg-jj-light-bg shadow-md p-4 sticky top-0 z-50">
-        <div class="container mx-auto flex justify-between items-center">
-            <div class="flex items-center" href="#inicio">
-                <img src="./images/logo.jpg" alt="Logo Service JJ" class="h-20 w-auto rounded-md">
-                <h1 class="text-4xl font-newtown text-jj-blue">  Service JJ</h1>
-            </div>
+        <div class="w-full max-w-6xl mx-auto flex justify-between items-center">
+            <a href="#inicio" class="flex items-center space-x-2">
+            <img src="./images/logo.jpg" alt="Logo Service JJ" class="h-20 w-auto rounded-md">
+            <h1 class="text-4xl font-newtown text-jj-blue">Service JJ</h1>
+            </a>
+
 
             <button id="mobile-menu-button" class="md:hidden text-jj-blue focus:outline-none">
                 <i class="fas fa-bars text-2xl"></i>
@@ -29,11 +38,11 @@
                         <i class="fas fa-times text-2xl"></i>
                     </button>
                 </li>
-                <li><a href="#inicio" class="block py-3 px-4 text-gray-700 hover:text-jj-orange md:hover:bg-transparent md:inline-block md:py-0 md:px-0 rounded-md transition duration-300 ease-in-out">Inicio</a></li>
-                <li><a href="#servicios" class="block py-3 px-4 text-gray-700 hover:text-jj-orange md:hover:bg-transparent md:inline-block md:py-0 md:px-0 rounded-md transition duration-300 ease-in-out">Servicios</a></li>
-                <li><a href="#porque-elegirnos" class="block py-3 px-4 text-gray-700 hover:text-jj-orange md:hover:bg-transparent md:inline-block md:py-0 md:px-0 rounded-md transition duration-300 ease-in-out">¿Por Qué Elegirnos?</a></li>
-                <li><a href="#nosotros" class="block py-3 px-4 text-gray-700 hover:text-jj-orange md:hover:bg-transparent md:inline-block md:py-0 md:px-0 rounded-md transition duration-300 ease-in-out">Nosotros</a></li>
-                <li><a href="#contacto" class="block py-3 px-4 text-gray-700 hover:text-jj-orange md:hover:bg-transparent md:inline-block md:py-0 md:px-0 rounded-md transition duration-300 ease-in-out">Contacto</a></li>
+                <li><a href="#inicio" class="font-newtown py-3 px-4 text-gray-700 hover:text-jj-orange md:hover:bg-transparent md:inline-block md:py-0 md:px-0 rounded-md transition duration-300 ease-in-out">Inicio</a></li>
+                <li><a href="#servicios" class="font-newtown block py-3 px-4 text-gray-700 hover:text-jj-orange md:hover:bg-transparent md:inline-block md:py-0 md:px-0 rounded-md transition duration-300 ease-in-out">Servicios</a></li>
+                <li><a href="#porque-elegirnos" class="font-newtown block py-3 px-4 text-gray-700 hover:text-jj-orange md:hover:bg-transparent md:inline-block md:py-0 md:px-0 rounded-md transition duration-300 ease-in-out">¿Por Qué Elegirnos?</a></li>
+                <li><a href="#nosotros" class="font-newtown block py-3 px-4 text-gray-700 hover:text-jj-orange md:hover:bg-transparent md:inline-block md:py-0 md:px-0 rounded-md transition duration-300 ease-in-out">Nosotros</a></li>
+                <li><a href="#contacto" class="font-newtown block py-3 px-4 text-gray-700 hover:text-jj-orange md:hover:bg-transparent md:inline-block md:py-0 md:px-0 rounded-md transition duration-300 ease-in-out">Contacto</a></li>
             </ul>
         </div>
     </nav>
@@ -98,7 +107,9 @@
                 </div>
 
                 <div class="bg-jj-light-bg-darker p-8 rounded-xl shadow-lg hover:shadow-xl transition duration-300 ease-in-out transform hover:-translate-y-2 border border-jj-light-bg-darker hidden-on-load">
-                    <div class="text-jj-orange text-5xl mb-6 text-center">🧺</div>
+                    <div class="flex justify-center mb-6">
+                    <i class="fas fa-tools text-jj-orange text-5xl"></i>
+                    </div>
                     <h3 class="text-2xl font-semibold text-jj-blue mb-4 text-center">Electrodomésticos</h3>
                     <p class="text-gray-700 text-center">
                         Reparación de lavarropas, microondas, hornos eléctricos, aspiradoras y otros electrodomésticos.
@@ -135,7 +146,7 @@
 
     <section id="porque-elegirnos" class="py-16 md:py-24 bg-jj-light-bg-darker">
         <div class="container mx-auto px-4">
-            <h2 class="text-4xl md:text-5xl font-bold text-center mb-12 text-jj-blue hidden-on-load">¿Por Qué Elegirnos?</h2>
+            <h2 class="text-4xl md:text-5xl font-newtown text-center mb-12 text-jj-blue hidden-on-load">¿Por Qué Elegirnos?</h2>
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                 <div class="bg-jj-light-bg p-8 rounded-xl shadow-lg hover:shadow-xl transition duration-300 ease-in-out transform hover:-translate-y-2 border border-jj-light-bg-darker hidden-on-load">
                     <div class="text-jj-orange text-5xl mb-6 text-center">✅</div>
@@ -186,9 +197,9 @@
     <section id="nosotros" class="py-16 md:py-24 bg-jj-light-bg-darker">
         <div class="container mx-auto px-4 flex flex-col md:flex-row items-center justify-center gap-12">
             <div class="md:w-1/2 text-center md:text-left hidden-on-load">
-                <h2 class="text-4xl md:text-5xl font-bold mb-6 text-jj-blue">Sobre Nosotros</h2>
+                <h2 class="text-4xl md:text-5xl font-newtown mb-6 text-jj-blue">Sobre Nosotros</h2>
                 <p class="text-lg md:text-xl text-gray-700 leading-relaxed mb-6">
-                    En <span class="font-semibold text-jj-orange">Servicio Técnico JJ</span>, nos dedicamos a ofrecer soluciones integrales para tus problemas tecnológicos y del hogar. Con años de experiencia en el sector, nuestro equipo de técnicos altamente capacitados está listo para brindarte un servicio rápido, eficiente y de la más alta calidad.
+                    En <span class="font-newtown text-jj-orange">Service JJ</span>, nos dedicamos a ofrecer soluciones integrales para tus problemas tecnológicos y del hogar. Con años de experiencia en el sector, nuestro equipo de técnicos altamente capacitados está listo para brindarte un servicio rápido, eficiente y de la más alta calidad.
                 </p>
                 <p class="text-lg md:text-xl text-gray-700 leading-relaxed">
                     Nuestra misión es garantizar la satisfacción de nuestros clientes, asegurando que sus dispositivos y electrodomésticos funcionen de manera óptima y extendiendo su vida útil. ¡Confía en los expertos!
@@ -202,7 +213,7 @@
 
     <section id="cta" class="bg-jj-blue text-white py-20 md:py-24 text-center rounded-t-lg shadow-lg">
         <div class="container mx-auto px-4 hidden-on-load">
-            <h2 class="text-4xl md:text-5xl font-bold leading-tight mb-6">
+            <h2 class="text-4xl md:text-5xl font-newtown leading-tight mb-6">
                 ¿Listo para que tus equipos vuelvan a funcionar?
             </h2>
             <p class="text-lg md:text-2xl mb-10 max-w-3xl mx-auto opacity-90">
@@ -216,10 +227,10 @@
 
     <section id="contacto" class="py-16 md:py-24 bg-jj-light-bg">
         <div class="container mx-auto px-4">
-            <h2 class="text-4xl md:text-5xl font-bold text-center mb-12 text-jj-blue hidden-on-load">Contáctanos</h2>
+            <h2 class="text-4xl md:text-5xl font-newtown text-center mb-12 text-jj-blue hidden-on-load">Contáctanos</h2>
             <div class="flex flex-col md:flex-row justify-center items-center gap-12">
                 <div class="md:w-1/2 bg-jj-light-bg-darker p-8 rounded-xl shadow-lg border border-jj-light-bg-darker w-full max-w-md hidden-on-load">
-                    <h3 class="text-2xl font-semibold text-jj-blue mb-6 text-center">Envíanos un Mensaje</h3>
+                    <h3 class="text-2xl font-newtown text-jj-blue mb-6 text-center">Envíanos un Mensaje</h3>
                     <form class="space-y-6">
                         <div>
                             <label for="nombre" class="block text-gray-700 text-sm font-bold mb-2">Nombre:</label>
@@ -239,7 +250,7 @@
                     </form>
                 </div>
                 <div class="md:w-1/2 bg-jj-light-bg-darker p-8 rounded-xl shadow-lg border border-jj-light-bg-darker w-full max-w-md hidden-on-load">
-                    <h3 class="text-2xl font-semibold text-jj-blue mb-6 text-center">Nuestra Información</h3>
+                    <h3 class="text-2xl font-newtown text-jj-blue mb-6 text-center">Nuestra Información</h3>
                     <div class="space-y-4 text-gray-700 text-lg">
                         <p class="flex items-center justify-center md:justify-start">
                             <span class="text-jj-orange mr-3">📞</span> Teléfono: <a href="tel:+541112345678" class="ml-2 hover:underline">+54 11 1234-5678</a>
