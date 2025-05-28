@@ -20,7 +20,7 @@
 </head>
 <body class="text-gray-800">
 
-    <nav class="bg-jj-light-bg shadow-md p-4 sticky top-0 z-50">
+    <nav id="navbar" class="bg-jj-light-bg shadow-md p-4 sticky top-0 z-50 transition-all duration-300">
         <div class="w-full max-w-6xl mx-auto flex justify-between items-center">
             <a href="#inicio" class="flex items-center space-x-2">
             <img src="./images/logo.jpg" alt="Logo Service JJ" class="h-20 w-auto rounded-md">
@@ -38,11 +38,37 @@
                         <i class="fas fa-times text-2xl"></i>
                     </button>
                 </li>
-                <li><a href="#inicio" class="font-newtown py-3 px-4 text-gray-700 hover:text-jj-orange md:hover:bg-transparent md:inline-block md:py-0 md:px-0 rounded-md transition duration-300 ease-in-out">Inicio</a></li>
-                <li><a href="#servicios" class="font-newtown block py-3 px-4 text-gray-700 hover:text-jj-orange md:hover:bg-transparent md:inline-block md:py-0 md:px-0 rounded-md transition duration-300 ease-in-out">Servicios</a></li>
-                <li><a href="#porque-elegirnos" class="font-newtown block py-3 px-4 text-gray-700 hover:text-jj-orange md:hover:bg-transparent md:inline-block md:py-0 md:px-0 rounded-md transition duration-300 ease-in-out">¿Por Qué Elegirnos?</a></li>
-                <li><a href="#nosotros" class="font-newtown block py-3 px-4 text-gray-700 hover:text-jj-orange md:hover:bg-transparent md:inline-block md:py-0 md:px-0 rounded-md transition duration-300 ease-in-out">Nosotros</a></li>
-                <li><a href="#contacto" class="font-newtown block py-3 px-4 text-gray-700 hover:text-jj-orange md:hover:bg-transparent md:inline-block md:py-0 md:px-0 rounded-md transition duration-300 ease-in-out">Contacto</a></li>
+                <li>
+    <a href="#inicio" class="relative group font-newtown py-3 px-4 text-gray-700 hover:text-jj-orange transition duration-300 ease-in-out">
+    Inicio
+    <span class="absolute left-0 -bottom-1 h-0.5 w-0 bg-jj-orange transition-all duration-300 group-hover:w-full"></span>
+    </a>
+</li>
+<li>
+    <a href="#servicios" class="relative group font-newtown py-3 px-4 text-gray-700 hover:text-jj-orange transition duration-300 ease-in-out">
+    Servicios
+    <span class="absolute left-0 -bottom-1 h-0.5 w-0 bg-jj-orange transition-all duration-300 group-hover:w-full"></span>
+    </a>
+</li>
+<li>
+    <a href="#porque-elegirnos" class="relative group font-newtown py-3 px-4 text-gray-700 hover:text-jj-orange transition duration-300 ease-in-out">
+    ¿Por Qué Elegirnos?
+    <span class="absolute left-0 -bottom-1 h-0.5 w-0 bg-jj-orange transition-all duration-300 group-hover:w-full"></span>
+    </a>
+</li>
+<li>
+    <a href="#nosotros" class="relative group font-newtown py-3 px-4 text-gray-700 hover:text-jj-orange transition duration-300 ease-in-out">
+    Nosotros
+    <span class="absolute left-0 -bottom-1 h-0.5 w-0 bg-jj-orange transition-all duration-300 group-hover:w-full"></span>
+    </a>
+</li>
+<li>
+    <a href="#contacto" class="relative group font-newtown py-3 px-4 text-gray-700 hover:text-jj-orange transition duration-300 ease-in-out">
+    Contacto
+    <span class="absolute left-0 -bottom-1 h-0.5 w-0 bg-jj-orange transition-all duration-300 group-hover:w-full"></span>
+    </a>
+</li>
+
             </ul>
         </div>
     </nav>
@@ -56,7 +82,7 @@
                 En Servicio Técnico JJ, reparamos y mantenemos tus dispositivos electrónicos y electrodomésticos para que funcionen como nuevos.
             </p>
             <a href="#contacto" class="bg-jj-orange text-white font-bold py-3 px-8 rounded-full text-xl hover:bg-jj-orange-dark transition duration-300 ease-in-out transform hover:scale-105 shadow-lg">
-                ¡Contáctanos Ahora!
+                ¡Contactanos Ahora!
             </a>
         </div>
     </section>
@@ -241,7 +267,7 @@
 
         <!-- Imagen -->
         <div class="md:w-1/2 flex justify-center items-center hidden-on-load bg-jj-light-bg-darker p-6 rounded-xl shadow-lg">
-            <img src="./images/local-jj.webp" alt="Equipo de Servicio Técnico JJ" class="w-auto max-w-full max-h-[450px] object-contain rounded-xl shadow-xl">
+            <img src="./images/local-jj.webp" alt="Equipo de Servicio Técnico JJ" class="w-full h-full object-cover rounded-xl shadow-xl">
         </div>
     </div>
 </section>
@@ -335,7 +361,7 @@
 
     <footer class="bg-jj-blue text-white py-8 text-center rounded-t-lg shadow-inner">
         <div class="container mx-auto px-4">
-            <p>&copy; 2024 Servicio Técnico JJ. Todos los derechos reservados.</p>
+            <p>&copy; 2025 Servicio Técnico JJ. Todos los derechos reservados.</p>
             <div class="mt-4 flex justify-center space-x-6">
                 <a href="https://www.facebook.com/p/SERVICE-JJ-100063529391770/" target="_blank" class="text-white hover:text-jj-orange transition duration-300 ease-in-out text-2xl">
                     <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">

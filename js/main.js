@@ -77,3 +77,38 @@
                 mainNavMenu.classList.add('mobile-menu-hidden');
             }
         });
+
+document.addEventListener("DOMContentLoaded", () => {
+    const navbar = document.getElementById("navbar");
+    let prevScrollPos = window.pageYOffset;
+    let isHovering = false;
+
+  // Detectar scroll
+    window.addEventListener("scroll", () => {
+    const currentScrollPos = window.pageYOffset;
+
+    if (isHovering || prevScrollPos > currentScrollPos) {
+      // Mostrar si se hace hover o se scrollea hacia arriba
+        navbar.style.top = "0";
+    } else {
+      // Ocultar si se scrollea hacia abajo
+        navbar.style.top = "-100px";
+    }
+
+    prevScrollPos = currentScrollPos;
+    });
+
+  // Detectar hover sobre el navbar
+    navbar.addEventListener("mouseenter", () => {
+    isHovering = true;
+    navbar.style.top = "0";
+    });
+
+    navbar.addEventListener("mouseleave", () => {
+    isHovering = false;
+    // Si el usuario sigue haciendo scroll hacia abajo, ocultar
+    if (window.pageYOffset > prevScrollPos) {
+        navbar.style.top = "-100px";
+    }
+    });
+    });

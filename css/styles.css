@@ -123,3 +123,6 @@
     font-family: 'Newtown', sans-serif;
     text-transform: uppercase;
 }
+#navbar {
+    pointer-events: auto; 
+}
