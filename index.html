@@ -3,6 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- SEO básico -->
+    <title>ServiceJJ - Reparaciones y Soporte Técnico</title>
+    <meta name="description" content="ServiceJJ ofrece soluciones en soporte técnico, mantenimiento de computadoras y servicios tecnológicos con estilo retro.">
+    <meta name="keywords" content="servicejj, soporte técnico, reparación de PC, mantenimiento, informática, tecnología, retro, pixel art">
+    <meta name="author" content="Jonatan Gaston Churruarin">
+
+    <!-- SEO para redes sociales (Open Graph para Facebook, LinkedIn, etc.) -->
+    <meta property="og:title" content="ServiceJJ - Reparaciones y Soporte Técnico">
+    <meta property="og:description" content="Soluciones informáticas con un estilo retro único. Mantenimiento, reparaciones y más.">
+    <meta property="og:url" content="https://jochurru.github.io/servicejj/">
+    <meta property="og:type" content="website">
+
+    <!-- Twitter Card (opcional) -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="ServiceJJ - Reparaciones y Soporte Técnico">
+    <meta name="twitter:description" content="Soluciones informáticas con un estilo retro único.">
+
+    <!-- Ícono del sitio (favicon) -->
+    <link rel="icon" href="./images/favicon.ico" type="image/x-icon">
+
+
     <title>Servicio Técnico JJ - Soluciones Tecnológicas (B&N)</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
@@ -88,103 +109,175 @@
     </section>
 
 <section id="servicios" class="py-16 md:py-24 bg-jj-light-bg">
-    <div class="container mx-auto px-4">
+<div class="container mx-auto px-4">
     <h2 class="text-4xl md:text-5xl font-newtown text-center mb-12 text-jj-blue hidden-on-load">Nuestros Servicios</h2>
     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
 
-        <div class="bg-jj-light-bg-darker p-8 rounded-xl shadow-lg hover:shadow-xl transition duration-300 ease-in-out transform hover:-translate-y-2 border border-jj-light-bg-darker hidden-on-load">
-        <div class="text-jj-orange text-5xl mb-6 text-center">
+    <!-- Tarjeta -->
+    <div class="flip-card relative hidden-on-load">
+        <div class="flip-card-inner">
+        <div class="flip-card-front bg-jj-light-bg-darker p-8 rounded-xl shadow-lg text-center">
+            <div class="text-jj-orange text-5xl mb-6">
             <i class="fa-solid fa-laptop"></i>
+            </div>
+            <h3 class="text-2xl font-semibold text-jj-blue mb-4">Reparación de Laptops</h3>
+            <p class="text-gray-700">Diagnóstico de hardware y software, limpieza y recuperación de datos.</p>
         </div>
-        <h3 class="text-2xl font-semibold text-jj-blue mb-4 text-center">Reparación de Laptops</h3>
-        <p class="text-gray-700 text-center">
-            Diagnóstico y reparación de hardware y software, limpieza, optimización y recuperación de datos.
-        </p>
+        <div class="flip-card-back bg-jj-light-bg-darker p-8 rounded-xl shadow-lg text-center">
+            <h4 class="text-xl font-semibold text-jj-blue mb-2">Marcas</h4>
+            <p class="text-gray-700 mb-4">HP, Dell, Lenovo, Asus, Acer, MacBook y mas!</p>
+            <h4 class="text-xl font-semibold text-jj-blue mb-2">Reparaciones</h4>
+            <p class="text-gray-700">Pantallas, discos, teclados, batería, sistema operativo.</p>
         </div>
+        </div>
+    </div>
 
-        <div class="bg-jj-light-bg-darker p-8 rounded-xl shadow-lg hover:shadow-xl transition duration-300 ease-in-out transform hover:-translate-y-2 border border-jj-light-bg-darker hidden-on-load">
-        <div class="text-jj-orange text-5xl mb-6 text-center">
+    <!-- Celulares -->
+    <div class="flip-card relative hidden-on-load">
+        <div class="flip-card-inner">
+        <div class="flip-card-front bg-jj-light-bg-darker p-8 rounded-xl shadow-lg text-center">
+            <div class="text-jj-orange text-5xl mb-6">
             <i class="fa-solid fa-mobile-screen-button"></i>
+            </div>
+            <h3 class="text-2xl font-semibold text-jj-blue mb-4">Reparación de Celulares</h3>
+            <p class="text-gray-700">Pantallas, baterías, conectores, software y más.</p>
         </div>
-        <h3 class="text-2xl font-semibold text-jj-blue mb-4 text-center">Reparación de Celulares</h3>
-        <p class="text-gray-700 text-center">
-            Cambio de pantallas, baterías, conectores de carga, problemas de software y mucho más.
-        </p>
+        <div class="flip-card-back bg-jj-light-bg-darker p-8 rounded-xl shadow-lg text-center">
+            <h4 class="text-xl font-semibold text-jj-blue mb-2">Marcas</h4>
+            <p class="text-gray-700 mb-4">Samsung, Motorola, iPhone, Xiaomi, Huawei y mas!</p>
+            <h4 class="text-xl font-semibold text-jj-blue mb-2">Reparaciones</h4>
+            <p class="text-gray-700">Cambio de display, placa base, recuperación de sistema.</p>
         </div>
+        </div>
+    </div>
 
-        <div class="bg-jj-light-bg-darker p-8 rounded-xl shadow-lg hover:shadow-xl transition duration-300 ease-in-out transform hover:-translate-y-2 border border-jj-light-bg-darker hidden-on-load">
-        <div class="text-jj-orange text-5xl mb-6 text-center">
+    <!-- Televisores -->
+    <div class="flip-card relative hidden-on-load">
+        <div class="flip-card-inner">
+        <div class="flip-card-front bg-jj-light-bg-darker p-8 rounded-xl shadow-lg text-center">
+            <div class="text-jj-orange text-5xl mb-6">
             <i class="fa-solid fa-tv"></i>
+            </div>
+            <h3 class="text-2xl font-semibold text-jj-blue mb-4">Reparación de Televisores</h3>
+            <p class="text-gray-700">Problemas de imagen, sonido, encendido o puertos.</p>
         </div>
-        <h3 class="text-2xl font-semibold text-jj-blue mb-4 text-center">Reparación de Televisores</h3>
-        <p class="text-gray-700 text-center">
-            Solución de problemas de imagen, sonido, encendido y conectividad en todo tipo de televisores.
-        </p>
+        <div class="flip-card-back bg-jj-light-bg-darker p-8 rounded-xl shadow-lg text-center">
+            <h4 class="text-xl font-semibold text-jj-blue mb-2">Marcas</h4>
+            <p class="text-gray-700 mb-4">LG, Samsung, TCL, Noblex, RCA y mas!</p>
+            <h4 class="text-xl font-semibold text-jj-blue mb-2">Reparaciones</h4>
+            <p class="text-gray-700">Fuente, inverter, main board, pantalla, sonido.</p>
         </div>
+        </div>
+    </div>
 
-        <div class="bg-jj-light-bg-darker p-8 rounded-xl shadow-lg hover:shadow-xl transition duration-300 ease-in-out transform hover:-translate-y-2 border border-jj-light-bg-darker hidden-on-load">
-        <div class="text-jj-orange text-5xl mb-6 text-center">
+    <!-- Refrigeración -->
+    <div class="flip-card relative hidden-on-load">
+        <div class="flip-card-inner">
+        <div class="flip-card-front bg-jj-light-bg-darker p-8 rounded-xl shadow-lg text-center">
+            <div class="text-jj-orange text-5xl mb-6">
             <i class="fa-solid fa-snowflake"></i>
+            </div>
+            <h3 class="text-2xl font-semibold text-jj-blue mb-4">Refrigeración</h3>
+            <p class="text-gray-700">Reparamos heladeras, freezers y aires acondicionados.</p>
         </div>
-        <h3 class="text-2xl font-semibold text-jj-blue mb-4 text-center">Refrigeración</h3>
-        <p class="text-gray-700 text-center">
-            Reparación y mantenimiento de heladeras, freezers, aires acondicionados y sistemas de refrigeración.
-        </p>
+        <div class="flip-card-back bg-jj-light-bg-darker p-8 rounded-xl shadow-lg text-center">
+            <h4 class="text-xl font-semibold text-jj-blue mb-2">Servicios</h4>
+            <p class="text-gray-700">Carga de gas, compresores, termostatos, limpieza general.</p>
         </div>
+        </div>
+    </div>
 
-        <div class="bg-jj-light-bg-darker p-8 rounded-xl shadow-lg hover:shadow-xl transition duration-300 ease-in-out transform hover:-translate-y-2 border border-jj-light-bg-darker hidden-on-load">
-        <div class="text-jj-orange text-5xl mb-6 text-center">
+    <!-- Calefacción -->
+    <div class="flip-card relative hidden-on-load">
+        <div class="flip-card-inner">
+        <div class="flip-card-front bg-jj-light-bg-darker p-8 rounded-xl shadow-lg text-center">
+            <div class="text-jj-orange text-5xl mb-6">
             <i class="fa-solid fa-fire"></i>
+            </div>
+            <h3 class="text-2xl font-semibold text-jj-blue mb-4">Calefacción</h3>
+            <p class="text-gray-700">Mantenimiento y reparación de estufas, calderas, calefactores.</p>
         </div>
-        <h3 class="text-2xl font-semibold text-jj-blue mb-4 text-center">Calefacción</h3>
-        <p class="text-gray-700 text-center">
-            Servicio técnico para estufas, calefactores, calderas y sistemas de calefacción.
-        </p>
+        <div class="flip-card-back bg-jj-light-bg-darker p-8 rounded-xl shadow-lg text-center">
+            <h4 class="text-xl font-semibold text-jj-blue mb-2">Servicios</h4>
+            <p class="text-gray-700">Puesta a punto, limpieza de inyectores, encendido automático, mantenimieto y reparacion de calderas.</p>
         </div>
+        </div>
+    </div>
 
-        <div class="bg-jj-light-bg-darker p-8 rounded-xl shadow-lg hover:shadow-xl transition duration-300 ease-in-out transform hover:-translate-y-2 border border-jj-light-bg-darker hidden-on-load">
-        <div class="flex justify-center mb-6">
-            <i class="fa-solid fa-tools text-jj-orange text-5xl"></i>
+    <!-- Electrodomésticos -->
+    <div class="flip-card relative hidden-on-load">
+        <div class="flip-card-inner">
+        <div class="flip-card-front bg-jj-light-bg-darker p-8 rounded-xl shadow-lg text-center">
+            <div class="text-jj-orange text-5xl mb-6">
+            <i class="fa-solid fa-tools"></i>
+            </div>
+            <h3 class="text-2xl font-semibold text-jj-blue mb-4">Electrodomésticos</h3>
+            <p class="text-gray-700">Lavarropas, microondas, hornos, aspiradoras y más.</p>
         </div>
-        <h3 class="text-2xl font-semibold text-jj-blue mb-4 text-center">Electrodomésticos</h3>
-        <p class="text-gray-700 text-center">
-            Reparación de lavarropas, microondas, hornos eléctricos, aspiradoras y otros electrodomésticos.
-        </p>
+        <div class="flip-card-back bg-jj-light-bg-darker p-8 rounded-xl shadow-lg text-center">
+            <h4 class="text-xl font-semibold text-jj-blue mb-2">Reparaciones</h4>
+            <p class="text-gray-700">Mecánica, resistencias, temporizadores, motores.</p>
         </div>
+        </div>
+    </div>
 
-        <div class="bg-jj-light-bg-darker p-8 rounded-xl shadow-lg hover:shadow-xl transition duration-300 ease-in-out transform hover:-translate-y-2 border border-jj-light-bg-darker hidden-on-load">
-        <div class="text-jj-orange text-5xl mb-6 text-center">
+    <!-- Mantenimiento -->
+    <div class="flip-card relative hidden-on-load">
+        <div class="flip-card-inner">
+        <div class="flip-card-front bg-jj-light-bg-darker p-8 rounded-xl shadow-lg text-center">
+            <div class="text-jj-orange text-5xl mb-6">
             <i class="fa-solid fa-desktop"></i>
+            </div>
+            <h3 class="text-2xl font-semibold text-jj-blue mb-4">Mantenimiento de PCs</h3>
+            <p class="text-gray-700">Limpieza interna, optimización, antivirus y actualizaciones.</p>
         </div>
-        <h3 class="text-2xl font-semibold text-jj-blue mb-4 text-center">Mantenimiento de Computadoras</h3>
-        <p class="text-gray-700 text-center">
-            Limpieza interna, optimización del sistema, instalación de antivirus y actualizaciones.
-        </p>
+        <div class="flip-card-back bg-jj-light-bg-darker p-8 rounded-xl shadow-lg text-center">
+            <h4 class="text-xl font-semibold text-jj-blue mb-2">Servicios</h4>
+            <p class="text-gray-700">Formateo, backup, limpieza térmica, mejora de rendimiento.</p>
         </div>
+        </div>
+    </div>
 
-        <div class="bg-jj-light-bg-darker p-8 rounded-xl shadow-lg hover:shadow-xl transition duration-300 ease-in-out transform hover:-translate-y-2 border border-jj-light-bg-darker hidden-on-load">
-        <div class="text-jj-orange text-5xl mb-6 text-center">
+    <!-- Datos -->
+    <div class="flip-card relative hidden-on-load">
+        <div class="flip-card-inner">
+        <div class="flip-card-front bg-jj-light-bg-darker p-8 rounded-xl shadow-lg text-center">
+            <div class="text-jj-orange text-5xl mb-6">
             <i class="fa-solid fa-floppy-disk"></i>
+            </div>
+            <h3 class="text-2xl font-semibold text-jj-blue mb-4">Recuperación de Datos</h3>
+            <p class="text-gray-700">Discos dañados, USBs, formateos, archivos eliminados.</p>
         </div>
-        <h3 class="text-2xl font-semibold text-jj-blue mb-4 text-center">Recuperación de Datos</h3>
-        <p class="text-gray-700 text-center">
-            Recuperamos información valiosa de discos duros dañados, USBs y otros medios de almacenamiento.
-        </p>
+        <div class="flip-card-back bg-jj-light-bg-darker p-8 rounded-xl shadow-lg text-center">
+            <h4 class="text-xl font-semibold text-jj-blue mb-2">Soportes</h4>
+            <p class="text-gray-700">HDD, SSD, pendrives, tarjetas SD</p>
+            <h4 class="text-xl font-semibold text-jj-blue mb-2">Técnicas</h4>
+            <p class="text-gray-700">Software especializado, clonado, reparación lógica.</p>
         </div>
+        </div>
+    </div>
 
-        <div class="bg-jj-light-bg-darker p-8 rounded-xl shadow-lg hover:shadow-xl transition duration-300 ease-in-out transform hover:-translate-y-2 border border-jj-light-bg-darker hidden-on-load">
-        <div class="text-jj-orange text-5xl mb-6 text-center">
+    <!-- Asesoramiento -->
+    <div class="flip-card relative hidden-on-load">
+        <div class="flip-card-inner">
+        <div class="flip-card-front bg-jj-light-bg-darker p-8 rounded-xl shadow-lg text-center">
+            <div class="text-jj-orange text-5xl mb-6">
             <i class="fa-solid fa-lightbulb"></i>
+            </div>
+            <h3 class="text-2xl font-semibold text-jj-blue mb-4">Asesoramiento Técnico</h3>
+            <p class="text-gray-700">Ayuda para elegir equipos, instalar redes y resolver dudas.</p>
         </div>
-        <h3 class="text-2xl font-semibold text-jj-blue mb-4 text-center">Asesoramiento Técnico</h3>
-        <p class="text-gray-700 text-center">
-            Te ayudamos a elegir el mejor equipo, configurar redes y resolver dudas tecnológicas.
-        </p>
+        <div class="flip-card-back bg-jj-light-bg-darker p-8 rounded-xl shadow-lg text-center">
+            <h4 class="text-xl font-semibold text-jj-blue mb-2">Consultas Frecuentes</h4>
+            <p class="text-gray-700">Compra de PCs, routers, notebooks, seguridad, compatibilidad.</p>
         </div>
+        </div>
+    </div>
 
     </div>
-    </div>
+</div>
 </section>
+
 
 
     <section id="porque-elegirnos" class="py-16 md:py-24 bg-jj-light-bg-darker">
