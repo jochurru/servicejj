@@ -225,7 +225,7 @@
 </div>
 
 
-   <!-- Electrodomésticos -->
+  <!-- Electrodomésticos -->
 <div class="flip-card relative hidden-on-load">
   <div class="flip-card-inner">
     <div class="flip-card-front bg-jj-light-bg-darker p-8 rounded-xl shadow-lg text-center">
@@ -421,24 +421,26 @@
     <!-- Formulario -->
     <div class="md:w-1/2 bg-jj-light-bg-darker p-8 rounded-xl shadow-lg border border-jj-light-bg-darker w-full max-w-md hidden-on-load min-h-[650px] flex flex-col justify-between">
         <div>
-            <h3 class="text-2xl font-newtown text-jj-blue mb-6 text-center">Envíanos un Mensaje</h3>
-            <form class="space-y-6">
-                <div>
-                    <label for="nombre" class="block text-gray-700 text-sm font-bold mb-2">Nombre:</label>
-                    <input type="text" id="nombre" name="nombre" class="shadow appearance-none border rounded-lg w-full py-3 px-4 text-gray-700 leading-tight focus:outline-none focus:ring-2 focus:ring-jj-orange focus:border-transparent" placeholder="Tu Nombre Completo">
-                </div>
-                <div>
-                    <label for="email" class="block text-gray-700 text-sm font-bold mb-2">Email:</label>
-                    <input type="email" id="email" name="email" class="shadow appearance-none border rounded-lg w-full py-3 px-4 text-gray-700 leading-tight focus:outline-none focus:ring-2 focus:ring-jj-orange focus:border-transparent" placeholder="tu.email@ejemplo.com">
-                </div>
-                <div>
-                    <label for="mensaje" class="block text-gray-700 text-sm font-bold mb-2">Mensaje:</label>
-                    <textarea id="mensaje" name="mensaje" rows="6" class="shadow appearance-none border rounded-lg w-full py-3 px-4 text-gray-700 leading-tight focus:outline-none focus:ring-2 focus:ring-jj-orange focus:border-transparent" placeholder="Describe tu consulta o problema..."></textarea>
-                </div>
-                <button type="submit" class="bg-jj-orange text-white font-bold py-3 px-6 rounded-full text-lg hover:bg-jj-orange-dark transition duration-300 ease-in-out w-full shadow-md">
-                    Enviar Mensaje
-                </button>
-            </form>
+            <h3 class="text-2xl font-newtown text-jj-blue mb-6 text-center">Envianos un Mensaje</h3>
+            <form name="contacto" method="POST" netlify action="/gracias.html" class="space-y-6">
+  <input type="hidden" name="form-name" value="contacto" />
+  <div>
+    <label for="nombre" class="block text-gray-700 text-sm font-bold mb-2">Nombre:</label>
+    <input type="text" id="nombre" name="nombre" required class="shadow appearance-none border rounded-lg w-full py-3 px-4 text-gray-700 leading-tight focus:outline-none focus:ring-2 focus:ring-jj-orange focus:border-transparent" placeholder="Tu Nombre Completo">
+  </div>
+  <div>
+    <label for="email" class="block text-gray-700 text-sm font-bold mb-2">Email:</label>
+    <input type="email" id="email" name="email" required class="shadow appearance-none border rounded-lg w-full py-3 px-4 text-gray-700 leading-tight focus:outline-none focus:ring-2 focus:ring-jj-orange focus:border-transparent" placeholder="tu.email@ejemplo.com">
+  </div>
+  <div>
+    <label for="mensaje" class="block text-gray-700 text-sm font-bold mb-2">Mensaje:</label>
+    <textarea id="mensaje" name="mensaje" rows="6" required class="shadow appearance-none border rounded-lg w-full py-3 px-4 text-gray-700 leading-tight focus:outline-none focus:ring-2 focus:ring-jj-orange focus:border-transparent" placeholder="Describe tu consulta o problema..."></textarea>
+  </div>
+  <button type="submit" class="bg-jj-orange text-white font-bold py-3 px-6 rounded-full text-lg hover:bg-jj-orange-dark transition duration-300 ease-in-out w-full shadow-md">
+    Enviar Mensaje
+  </button>
+</form>
+
         </div>
     </div>
 
@@ -524,7 +526,7 @@
 </section>
 <section>
     <div class="container mx-auto px-4 text-center mt-12">
-        <h2 class="text-3xl font-newtown text-jj-blue mb-6 hidden-on-load">¡Contáctanos Ahora!</h2>
+        <h2 class="text-3xl font-newtown text-jj-blue mb-6 hidden-on-load">! Contactanos Ahora !</h2>
         <p class="text-lg md:text-xl text-gray-700 mb-6 hidden-on-load">
             Estamos aquí para ayudarte con cualquier problema técnico. No dudes en enviarnos un mensaje o llamarnos.
         </p>
